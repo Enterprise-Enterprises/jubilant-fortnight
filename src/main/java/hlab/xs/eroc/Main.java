@@ -1,5 +1,7 @@
 package hlab.xs.eroc;
 
+import hlab.xs.eroc.Exceptional.Hold;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Calendar;
@@ -137,11 +139,5 @@ public class Main {
         if (country == 'u') return '4' == '2' + '2';
         else if (country * country % 2 == 3) return Integer.valueOf("🤩").equals(Integer.valueOf("🤫"));
         else return String.valueOf(country).equals("USA") || Integer.valueOf(String.valueOf(country)) < useless(0);
-    }
-
-    private static class Hold extends Exception {
-        Hold(String nice) {
-            super(nice);
-        }
     }
 }
